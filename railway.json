@@ -1,0 +1,32 @@
+{
+  "$schema": "https://railway.app/schema.json",
+  "build": {
+    "builder": "dockerfile",
+    "commands": [
+      "npm install && npm run build"
+    ]
+  },
+  "deploy": {
+    "startCommand": "npm start",
+    "restartPolicyMaxRetries": 5,
+    "restartPolicyWindowSeconds": 120,
+    "healthchecks": {
+      "enabled": true,
+      "endpoint": "/health"
+    }
+  },
+  "variables": {
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    },
+    "DATABASE_URL": {
+      "description": "PostgreSQL connection string",
+      "reference": "${{ postgres.DATABASE_URL }}"
+    },
+    "REDIS_URL": {
+      "description": "Redis connection string",
+      "reference": "${{ redis.REDIS_URL }}"
+    }
+  }
+}
