@@ -7,8 +7,13 @@
     "DATABASE_URL",
     "REDIS_URL",
     "OPENAI_API_KEY",
-    "APP_URL",
-    "API_URL"
+    "STRIPE_SECRET_KEY",
+    "STRIPE_WEBHOOK_SECRET",
+    "SHOPIFY_API_KEY",
+    "SHOPIFY_API_SECRET",
+    "GORGIAS_CLIENT_ID",
+    "GORGIAS_CLIENT_SECRET",
+    "APP_URL"
   ],
   "pipeline": {
     "build": {

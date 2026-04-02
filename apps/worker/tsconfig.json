@@ -6,8 +6,10 @@
     "rootDir": "src",
     "declaration": true,
     "noEmit": false,
+    "module": "ESNext",
+    "esModuleInterop": true,
     "paths": {}
   },
   "include": ["src"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }

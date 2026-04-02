@@ -6,7 +6,6 @@
     "moduleResolution": "bundler",
     "baseUrl": "../..",
     "paths": {
-      "@replybase/api": ["apps/api/src/trpc/index.ts"],
       "@replybase/config": ["packages/config/src"],
       "@replybase/db": ["packages/db/src"],
       "@replybase/gorgias": ["packages/gorgias/src"],
